@@ -323,7 +323,7 @@ server 10.8.0.0 255.255.255.0" > /etc/openvpn/server/server.conf
 	esac
 	echo 'push "block-outside-dns"' >> /etc/openvpn/server/server.conf
 	echo "keepalive 10 120
-cipher AES-128-CBC
+cipher AES-128-GCM
 user nobody
 group $group_name
 persist-key
@@ -423,7 +423,7 @@ persist-key
 persist-tun
 remote-cert-tls server
 auth SHA512
-cipher AES-128-CBC
+cipher AES-128-GCM
 tun-mtu 60000
 tun-mtu-extra 32
 mssfix 1450

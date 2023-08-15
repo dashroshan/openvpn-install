@@ -428,6 +428,10 @@ tun-mtu 60000
 tun-mtu-extra 32
 mssfix 1450
 fast-io
+sndbuf 393216
+rcvbuf 393216
+push 'sndbuf 393216'
+push 'rcvbuf 393216'
 ignore-unknown-option block-outside-dns
 verb 3" > /etc/openvpn/server/client-common.txt
 	# Enable and start the OpenVPN service

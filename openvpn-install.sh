@@ -440,8 +440,6 @@ sudo sysctl -w net.core.rmem_default=26214400
 sudo sysctl -w net.core.dev_weight=40
 sudo sysctl -w net.core.netdev_tstamp_prequeue=0
 sudo sysctl -w kernel.randomize_va_space=0
-sudo sysctl -w net.ipv4.udp_rmem_min=8192
-sudo sysctl -w net.ipv4.udp_wmem_min=8192
 
 	# Generates the custom client.ovpn
 	new_client
